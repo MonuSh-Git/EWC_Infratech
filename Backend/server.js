@@ -59,7 +59,7 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
-app.use(express.static(path.join(_dirname, "/frontend/dist")));
+app.use(express.static(path.join(_dirname, "/Frontend/dist")));
 app.get("*", (_,res) => {
   res.sendFile(path.resolve(_dirname, "Frontend", "dist", "index.html"))
 })
