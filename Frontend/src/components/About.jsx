@@ -3,6 +3,7 @@ import aboutBg from "../assets/img/bg/about_bg.jpg";
 import experienceIcon from "../assets/img/icon/h2_about_icon03.svg";
 import aboutImg1 from "../assets/img/images/h2_about_img01.jpeg";
 import aboutImg2 from "../assets/img/images/h2_about_img02.jpeg";
+import aboutImg3 from "../assets/img/images/h2_about_img01.jpeg";
 // import icon1 from "../assets/img/icon/h2_about_icon01.svg";
 // import icon2 from "../assets/img/icon/h2_about_icon02.svg";
 import shape1 from "../assets/img/images/about_shape01.png";
@@ -16,37 +17,31 @@ const About = () => {
       style={{ backgroundImage: `url(${aboutBg})` }}
     >
       <div className="w-auto mx-20 px-1 md:px-12 sm:px-14">
-        <div className="grid gap-60 md:grid-cols-2 items-center">
+        <div className="grid gap-30 md:grid-cols-2 items-center">
           {/* Image Section */}
-          <div className="flex flex-col items-center justify-center space-y-6">
-            {/* Experience Badge */}
-            <div className="relative">
-              <div className="absolute -top-8 -left-8 bg-blue-950 shadow-lg rounded-lg p-4 flex flex-col items-center">
-                <img
-                  src={experienceIcon}
-                  alt="Experience Icon"
-                  className="w-12 mb-2"
-                />
-                <h2 className="text-lg font-bold text-white text-center">
-                  10+ Years
-                  <span className="block text-sm text-amber-600">
-                    Experience
-                  </span>
-                </h2>
-              </div>
+          <div className="grid grid-cols-[200px_1fr] grid-rows-2 gap-0">
+            {/* Top Left - Badge */}
+            <div className="bg-orange-500 rounded-tl-2xl p-6 text-white shadow-lg flex flex-col justify-center items-center h-[250px]">
+              <div className="text-3xl font-bold leading-tight">10+</div>
+              <div className="text-2xl font-bold leading-tight">Years</div>
+              <div className="text-md leading-tight mt-1">Experience</div>
             </div>
 
-            {/* Image Section - Always Two Images Side by Side */}
-            <div className="flex gap-2">
+            {/* Right - Big Image (spans 2 rows) */}
+            <div className="row-span-2">
               <img
                 src={aboutImg1}
                 alt="About Image 1"
-                className="rounded-lg shadow-lg  h-60"
+                className="rounded-tr-2xl rounded-br-2xl shadow-lg w-full h-[500px] object-cover"
               />
+            </div>
+
+            {/* Bottom Left - Small Image */}
+            <div>
               <img
                 src={aboutImg2}
                 alt="About Image 2"
-                className="rounded-lg shadow-lg h-70"
+                className="rounded-bl-2xl shadow-lg w-full h-[250px] object-cover"
               />
             </div>
           </div>

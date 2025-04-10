@@ -16,7 +16,7 @@ const Footer = () => {
           <div>
             <h2 className="text-xl font-semibold mb-4">About Us</h2>
             <p className="text-gray-300">
-              EWC Infratech, Inc. is a licensed, full-service general contracting firm located in New Delhi, offering development, building, renovation, and demolition services.
+              EWC Infratech, Inc. is a licensed, full-service general contracting firm located in New Delhi, offering Civil, Structural, Architectural, Mechenical, and Plumbing Infrastructure.
             </p>
           </div>
 
@@ -24,11 +24,11 @@ const Footer = () => {
           <div>
             <h2 className="text-xl font-semibold mb-4">Our Services</h2>
             <ul className="space-y-2">
-              <li><a href="construction.html" className="hover:text-amber-600">Commercial Construction</a></li>
-              <li><a href="residential-construction.html" className="hover:text-amber-600">Residential Construction</a></li>
-              <li><a href="roofing.html" className="hover:text-amber-600">Commercial Roofing</a></li>
-              <li><a href="roofing.html" className="hover:text-amber-600">Residential Roofing</a></li>
-              <li><a href="construction.html" className="hover:text-amber-600">General Construction</a></li>
+              <li><a href="#" className="hover:text-amber-600">Commercial Construction</a></li>
+              <li><a href="#" className="hover:text-amber-600">Residential Construction</a></li>
+              <li><a href="#" className="hover:text-amber-600">Commercial Roofing</a></li>
+              <li><a href="#" className="hover:text-amber-600">Residential Roofing</a></li>
+              <li><a href="#" className="hover:text-amber-600">General Construction</a></li>
             </ul>
           </div>
 
@@ -37,9 +37,9 @@ const Footer = () => {
             <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
             <ul className="space-y-2">
               <li><Link to="/about" className="hover:text-amber-600">About Us</Link></li>
-              <li><Link to="#" className="hover:text-amber-600">Certifications</Link></li>
+              {/* <li><Link to="#" className="hover:text-amber-600">Certifications</Link></li> */}
               <li><Link to="/past-projects" className="hover:text-amber-600">Past Work</Link></li>
-              <li><Link to="#" className="hover:text-amber-600">Apprenticeships</Link></li>
+              {/* <li><Link to="#" className="hover:text-amber-600">Apprenticeships</Link></li> */}
               <li><Link to="/contact" className="hover:text-amber-600">Contact Us</Link></li>
             </ul>
           </div>
@@ -80,7 +80,7 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold mb-2">Follow Us:</h2>
             <div className="flex space-x-4">
-              <a href="#" className="text-xl hover:text-amber-600"><i className="fab fa-facebook-f"></i></a>
+              {/* <a href="#" className="text-xl hover:text-amber-600"><i className="fab fa-facebook-f"></i></a> */}
               <a href="#" className="text-xl hover:text-amber-600"><i className="fab fa-linkedin-in"></i></a>
               <a href="#" className="text-xl hover:text-amber-600"><i className="fab fa-instagram"></i></a>
             </div>

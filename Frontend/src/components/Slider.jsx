@@ -76,10 +76,10 @@ const Slider = () => {
   }, []);
 
   return (
-    <section className="relative h-[100vh] overflow-hidden flex items-center justify-center">
+    <section className="relative h-[100vh] w-full overflow-hidden flex items-center justify-center">
       {/* Slider Shape */}
       <div className="absolute top-0 left-0 w-full h-full bg-[rgb(9,3,4)]">
-        <img src={sliderShape} alt="Slider Shape" className="w-full h-full object-contain opacity-100" />
+        <img src={sliderShape} alt="Slider Shape" className="w-full h-full object-cover opacity-100" />
       </div>
 
       {/* Slider Images */}
@@ -94,26 +94,26 @@ const Slider = () => {
             <img
               src={slide.background}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full object-contain opacity-100 z-10"
+              className="w-full h-full object-cover md:object-contain opacity-100 z-10"
             />
           </div>
         ))}
       </div>
 
       {/* Slider Content */}
-      <div className="absolute inset-0 flex items-center justify-center text-center text-white px-6">
+      <div className="absolute inset-0 flex items-center justify-center text-center text-white px-4 sm:px-6">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
-            className={`absolute w-full max-w-3xl transition-all duration-700 ${
+            className={`absolute w-full max-w-2xl sm:max-w-3xl transition-all duration-700 ${
               index === activeIndex ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            {/* <h2 className="text-4xl font-bold my-4">{slide.title}</h2>
-            <p className="text-lg mb-6">{slide.description}</p> */}
+            {/* <h2 className="text-2xl sm:text-4xl font-bold my-4">{slide.title}</h2>
+            <p className="text-base sm:text-lg mb-6">{slide.description}</p> */}
             {/* <Link
               to={slide.buttonLink}
-              className="bg-white text-gray-800 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-200 transition"
+              className="bg-white text-gray-800 px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-lg hover:bg-gray-200 transition"
             >
               {slide.buttonText}
             </Link> */}
@@ -122,11 +122,11 @@ const Slider = () => {
       </div>
 
       {/* Navigation Dots */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`w-4 h-4 rounded-full transition ${
+            className={`w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-full transition ${
               index === activeIndex ? "bg-white" : "bg-gray-400"
             }`}
             onClick={() => setActiveIndex(index)}
@@ -135,9 +135,9 @@ const Slider = () => {
       </div>
 
       {/* Brand Section */}
-      <div className="absolute bottom-0 w-full bg-gray-900 bg-opacity-50 py-3 z-30">
+      <div className="absolute bottom-0 w-full bg-gray-900 bg-opacity-50 py-2 sm:py-3 z-30">
         <div className="max-w-6xl mx-auto text-center text-white">
-          <h6 className="text-[25px] font-medium">Your Vision, Our Expertise.</h6>
+          <h6 className="text-[18px] sm:text-[25px] font-medium">Your Vision, Our Expertise.</h6>
         </div>
       </div>
     </section>

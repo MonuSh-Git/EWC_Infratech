@@ -24,14 +24,21 @@ const Projects = () => {
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row justify-between items-end mb-12">
-          <div className="text-white">
-            <span className="text-lg font-semibold uppercase tracking-wide">Past Projects</span>
-            <h2 className="text-4xl font-bold">Featured Past Projects</h2>
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-12">
+          {/* Text Section */}
+          <div className="text-center lg:text-left space-y-2">
+            <span className="text-amber-600 text-sm font-semibold uppercase tracking-widest">
+              Past Projects
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              Featured Past Projects
+            </h2>
           </div>
+
+          {/* Button */}
           <Link
             to="/portfolio"
-            className="bg-white text-black px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition"
+            className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-amber-600 transition duration-300 text-sm md:text-base"
           >
             View Past Projects
           </Link>
@@ -44,11 +51,19 @@ const Projects = () => {
               key={project.id}
               className="relative group overflow-hidden rounded-lg shadow-lg"
             >
-              <img src={project.image} alt={project.title} className="w-full h-60 object-cover" />
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-60 object-cover"
+              />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-white text-lg font-semibold">{project.title}</span>
+                <span className="text-white text-lg font-semibold">
+                  {project.title}
+                </span>
                 <h2 className="text-xl text-white font-bold mt-2">
-                  <Link to="/portfolio" className="hover:text-gray-300">{project.title}</Link>
+                  <Link to="/portfolio" className="hover:text-gray-300">
+                    {project.title}
+                  </Link>
                 </h2>
                 <Link
                   to="/portfolio"
