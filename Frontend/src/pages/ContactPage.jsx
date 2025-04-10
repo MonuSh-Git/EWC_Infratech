@@ -23,7 +23,7 @@ const ContactPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/send-email",
+        "https://ewcinfratech.onrender.com/send-email",
         formData
       );
       if (response.data.success) {
