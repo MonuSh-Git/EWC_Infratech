@@ -7,31 +7,31 @@ import projectImg04 from "../assets/img/CurrentProject/project_img04.jpg"
 const pastProjects = [
   {
     id: 1,
-    name: "Mumbai Metropolitan Region Development Authority (MMRDA)",
+    name: "DMRC DC-05 (Pulbangash UG Station)",
     imgSrc: projectImg01,
     pageLink: "p1.php",
   },
   {
     id: 2,
-    name: "Kolkata Metro Rail Corporation Limited",
+    name: "CA-158 Shivaji & Diamond Garden (Elevator) Mumbai",
     imgSrc: projectImg02,
     pageLink: "p2.php",
   },
   {
     id: 3,
-    name: "Delhi Metro Rail Corporation Limited (Vinobapuri)",
+    name: "DMRC DC-06 (Krishna Park UG Station)",
     imgSrc: projectImg03,
     pageLink: "p3.php",
   },
   {
     id: 4,
-    name: "Delhi Metro Rail Corporation Limited (Maujpur)",
+    name: "DMRC Horticulture (Najafgarh)",
     imgSrc: projectImg04,
     pageLink: "p4.php",
   },
   {
     id: 5,
-    name: "Delhi Metro Rail Corporation Limited (Punjabi Bagh)",
+    name: "DMRC Civil Inderlok ED-01 ",
     imgSrc: projectImg02,
     pageLink: "p5.php",
   },
