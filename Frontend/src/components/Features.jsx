@@ -117,7 +117,7 @@ const Features = () => {
                     <img
                       src={feature.icon}
                       alt={feature.title}
-                      className="w-12 h-12"
+                      className="w-12 h-12 "
                     />
                     <h2 className="text-lg sm:text-xl font-bold text-white">
                       {feature.title}
