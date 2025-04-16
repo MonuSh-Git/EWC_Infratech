@@ -43,21 +43,8 @@ const Header = () => {
 
   return (
     <header className="fixed w-full top-0 bg-white shadow-md z-50 border-b-4 border-transparent transition-all duration-300 before:content-[''] before:absolute before:-bottom-0.5 before:left-0 before:w-0 before:h-1 before:bg-orange-500 before:transition-all before:duration-500 hover:before:w-full">
-      <div className="max-w-full  px-4 md:px-6 lg:px-8 flex justify-between items-center py-2">
+      <div className="max-w-full  px-4 md:px-6 lg:px-8 flex justify-evenly items-center py-2">
         {/* Logo */}
-        {/* <Link to="/" className="flex items-center group">
-          <img
-            src={logo1}
-            alt="EWC Infratech"
-            className="h-20 w-auto"
-          />
-          <div className="-translate-x-4">
-            <p className="text-[25px] ">Infratech Pvt. Ltd.</p>
-            <p className="text-sm text-[#151572] font-[cursive]" >
-              Building Excellence, Defining Future.
-            </p>
-          </div>
-        </Link> */}
         <Link to="/" className="flex items-center group space-x-2">
           <img
             src={logo1}
@@ -77,12 +64,12 @@ const Header = () => {
         {/* Desktop Navigation */}
 
         <nav className="hidden md:flex space-x-6">
-          <ul className="flex space-x-6 text-[18px]">
+          <ul className="font-mono flex space-x-9 text-[18px]">
             {menuItems.map((item, index) => (
               <li key={index} className="relative group">
                 <Link
                   to={item.path || "#"} // fallback if no path
-                  className="flex items-center text-gray-800 text-[20px] font-bold hover:text-gray-600 transition relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-orange-500 before:transition-all before:duration-300 group-hover:before:w-full"
+                  className="flex items-center text-gray-800 text-[24px] font-bold hover:text-gray-600 transition relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-1 before:bg-orange-500 before:transition-all before:duration-300 group-hover:before:w-full"
                 >
                   {item.name}
                   {item.submenu && <FaChevronDown className="ml-1 text-xs" />}
@@ -118,12 +105,12 @@ const Header = () => {
             Call Us
           </Link>
         </div> */}
-        <div className=" hidden md:flex items-center space-x-6  text-gray-700">
+        {/* <div className=" hidden md:flex items-center space-x-6  text-gray-700">
           <div className="flex items-center space-x-2">
             <FaPhoneAlt className="text-blue-600" />
             <span className="text-[20px]">+91 11 4352 4767</span>
           </div>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Button */}
         <button

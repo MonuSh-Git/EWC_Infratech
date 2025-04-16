@@ -6,8 +6,8 @@ import AboutImg from "../assets/img/images/h2_about_img02.jpeg";
 
 const teamMembers = [
   {
-    name: "Mr. Abhishek Jha",
-    position: "Director (PHE Spec.)",
+    name: "Mr. Abhishek Kr. Jha",
+    position: "Director (PHE and Civil Spec.)",
     description:
       "Over 10 years of experience in Metro, Residential, and Institutional Projects, specializing in Public Health Engineering (PHE). Adept at designing and implementing sustainable water supply, drainage, and sanitation systems. Proven track record in project management, quality assurance, and compliance with industry standards. Passionate about innovation and efficiency in infrastructure development.",
     // license: "Registered Civil Engineer",

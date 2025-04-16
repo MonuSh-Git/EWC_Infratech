@@ -37,7 +37,7 @@ const Projects = () => {
 
           {/* Button */}
           <Link
-            to="/portfolio"
+            to="/past-projects"
             className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-amber-600 transition duration-300 text-sm md:text-base"
           >
             View Past Projects
@@ -60,11 +60,11 @@ const Projects = () => {
                 <span className="text-white text-lg font-semibold">
                   {project.title}
                 </span>
-                <h2 className="text-xl text-white font-bold mt-2">
+                {/* <h2 className="text-xl text-white font-bold mt-2">
                   <Link to="/portfolio" className="hover:text-gray-300">
                     {project.title}
                   </Link>
-                </h2>
+                </h2> */}
                 <Link
                   to="/portfolio"
                   className="mt-4 bg-white text-black p-2 rounded-full hover:bg-gray-300 transition"

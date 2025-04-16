@@ -24,11 +24,11 @@ const Footer = () => {
           <div>
             <h2 className="text-xl font-semibold mb-4">Our Services</h2>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-amber-600">Commercial Construction</a></li>
-              <li><a href="#" className="hover:text-amber-600">Residential Construction</a></li>
+              <li><a href="#" className="hover:text-amber-600">General Construction</a></li>
+              <li><a href="#" className="hover:text-amber-600">Plumbing Design and Drawing</a></li>
               <li><a href="#" className="hover:text-amber-600">Commercial Roofing</a></li>
               <li><a href="#" className="hover:text-amber-600">Residential Roofing</a></li>
-              <li><a href="#" className="hover:text-amber-600">General Construction</a></li>
+              
             </ul>
           </div>
 
@@ -89,7 +89,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-8 border-t border-gray-600 pt-4 flex flex-wrap items-center justify-between text-amber-600 text-sm">
-          <p>© 2025 EWC Infratech. All Rights Reserved | Design by .......</p>
+          <p>© 2025 EWC Infratech. All Rights Reserved | by .......</p>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-amber-600">Privacy Policy</a>
             <a href="#" className="hover:text-amber-600">Terms & Conditions</a>
