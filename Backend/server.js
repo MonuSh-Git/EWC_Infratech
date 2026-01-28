@@ -11,15 +11,9 @@ import cors from 'cors';
 // const bodyParser = require("body-parser");
 import bodyParser from 'body-parser';
 
-// const nodemailer = require("nodemailer");
-// import nodemailer from 'nodemailer'; // KEEP (not removing to avoid breaking)
-import { Resend } from "resend"; // ✅ ADD THIS
-
-// import path from 'path';
+import { Resend } from "resend"; 
 
 const app = express();
-
-// const _dirname = path.resolve();
 
 // Middleware
 app.use(cors());
